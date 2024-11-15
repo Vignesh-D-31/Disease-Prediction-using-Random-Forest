@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding-left: 20px
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Adjusts space between form and result */
+}
+
+.header {
+    position: absolute;
+    top: 15px;
+    left: 45%;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 2em;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 70px 50px 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color:black;
+    padding-bottom: 20px;
+}
+
+label {
+    color: black;
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 20px
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.result-text {
+    color: white; /* Adjust color as needed */
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}

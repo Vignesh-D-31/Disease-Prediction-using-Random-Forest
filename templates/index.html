@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <div class="header">
+        <h1>Disease Prediction</h1>
+    </div>
+</head>
+<body>
+    <div class="container">
+    <div class="form-container">
+        <h2>Enter your Symptoms</h2>
+        <form action="/predict" method="post">
+            <!-- Symptom 1 -->
+            <label for="symptom1">Symptom 1:</label>
+            <select name="symptom1" required>
+                <option value="" disabled selected>-select-</option>
+                {% for symptom in symptoms %}
+                    <option value="{{ symptom }}" {% if selected_symptoms[0] == symptom %}selected{% endif %}>
+                        {{ symptom }}
+                    </option>
+                {% endfor %}
+            </select>
+            
+            <!-- Symptom 2 -->
+            <label for="symptom2">Symptom 2:</label>
+            <select name="symptom2" required>
+                <option value="" disabled selected>-select-</option>
+                {% for symptom in symptoms %}
+                    <option value="{{ symptom }}" {% if selected_symptoms[1] == symptom %}selected{% endif %}>
+                        {{ symptom }}
+                    </option>
+                {% endfor %}
+            </select>
+            
+            <!-- Symptom 3 -->
+            <label for="symptom3">Symptom 3:</label>
+            <select name="symptom3" required>
+                <option value="" disabled selected>-select-</option>
+                {% for symptom in symptoms %}
+                    <option value="{{ symptom }}" {% if selected_symptoms[2] == symptom %}selected{% endif %}>
+                        {{ symptom }}
+                    </option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Predict Disease</button>
+        </form>
+    </div>
+
+    <div class="result-text">
+        {% if prediction %}
+            <p><b>Predicted Disease : <u>{{ prediction }}</u></b></p>
+        {% endif %}
+    </div>
+</div>
+</body>
+</html>
