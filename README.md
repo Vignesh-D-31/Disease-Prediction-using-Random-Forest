@@ -21,12 +21,3 @@ Includes user-friendly elements like form validation and dynamic option selectio
 Styled with an engaging and professional UI, including a background image and a neatly organized form layout.
 
 This application is ideal for educational purposes or as a starting point for more complex healthcare-related projects.
-
-Sample Outputs:
-
-![dfhglkjhd](sample_output/landing_page.png)
-![](sample_output/sample_pred1.png)
-![](sample_output/sample_pred2.png)
-![](sample_output/sample_pred3.png)
-![](sample_output/symptoms_selc1.png)
-![](sample_output/symptoms_selc2.png)
