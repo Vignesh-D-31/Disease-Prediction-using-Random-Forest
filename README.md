@@ -24,7 +24,7 @@ This application is ideal for educational purposes or as a starting point for mo
 
 Sample Outputs:
 
-![](sample_output/landing_page.png)
+![dfhglkjhd](sample_output/landing_page.png)
 ![](sample_output/sample_pred1.png)
 ![](sample_output/sample_pred2.png)
 ![](sample_output/sample_pred3.png)
