@@ -1,4 +1,4 @@
-This project is a Flask-based web application designed to predict diseases based on user-selected symptoms. It leverages a pre-trained Random Forest Classifier model to classify potential diseases based on input symptoms. The application incorporates the following key components:
+![landing_page](https://github.com/user-attachments/assets/f107cda9-225a-48b0-ac37-2b320d3497f0)This project is a Flask-based web application designed to predict diseases based on user-selected symptoms. It leverages a pre-trained Random Forest Classifier model to classify potential diseases based on input symptoms. The application incorporates the following key components:
 
 Backend (Flask Application):
 Loads a trained machine learning model (model.joblib) and an encoder (encoder.pkl) to map disease predictions.
@@ -18,6 +18,9 @@ After submitting, the application processes the selected symptoms and returns th
 Key Features:
 Symptom-to-index mapping ensures accurate feature encoding for the prediction model.
 Includes user-friendly elements like form validation and dynamic option selection persistence.
-Styled with an engaging and professional UI, including a background image and a neatly organized form layout.
+Styled with an engaging and profes!
 
 This application is ideal for educational purposes or as a starting point for more complex healthcare-related projects.
+
+Sample Outputs:
+![landing_page](https://github.com/user-attachments/assets/87690289-23bf-41b9-a681-fd1b3c87de22)
